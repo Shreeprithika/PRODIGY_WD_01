@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Garden | Exclusive Dining & Suites</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Background interactive glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- The Explore Modal -->
+    <div id="explore-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn hover-target">&times;</span>
+            <h2 id="modal-title">Suite Details</h2>
+
+            <!-- Gallery Container for multiple images -->
+            <div class="modal-gallery">
+                <img id="modal-img-main" class="gallery-img main" src="" alt="Suite Image Main">
+                <div class="gallery-thumbnails">
+                    <img id="modal-img-sub1" class="gallery-img sub hover-target" src="" alt="Suite Image Sub 1">
+                    <img id="modal-img-sub2" class="gallery-img sub hover-target" src="" alt="Suite Image Sub 2">
+                </div>
+            </div>
+
+            <p id="modal-desc">Enjoy the breathtaking view and unmatched luxury.</p>
+            <a href="#booking" class="btn btn-primary hover-target" id="modal-book-btn">Book This Suite</a>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar">
+        <div class="logo">LUXURY GARDEN</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="hover-target">Home</a></li>
+            <li><a href="#suites" class="hover-target">Suites</a></li>
+            <li><a href="#menu" class="hover-target">Dining</a></li>
+            <li><a href="#booking" class="hover-target btn-outline">Reserve</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero section">
+        <!-- Replaced single background with multiple slides for a running background image slider -->
+        <div class="hero-slider">
+            <div class="slide active"
+                style="background-image: url('https://images.unsplash.com/photo-1542314831-c6a4d14d8628?auto=format&fit=crop&w=2000&q=80')">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=80')">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=2000&q=80')">
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content reveal">
+            <h1 class="stagger-text click-style-target">Where Nature Meets Luxury</h1>
+            <p class="click-style-target">An exclusive sanctuary offering Michelin-starred dining and botanical suites.
+            </p>
+            <a href="#booking" class="btn btn-primary hover-target">Discover More</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <section id="suites" class="section suites-section">
+        <div class="container reveal">
+            <div class="section-header">
+                <h2>The Botanical Suites</h2>
+                <p>Wake up to the serene whispers of nature.</p>
+            </div>
+            <div class="suite-grid">
+                <!-- Suite 1 - Orchid -->
+                <div class="suite-card hover-target" data-title="Orchid Penthouse"
+                    data-img-main="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80"
+                    data-img-sub1="https://images.unsplash.com/photo-1533759413974-9e15f3b745ac?auto=format&fit=crop&w=800&q=80"
+                    data-img-sub2="https://plus.unsplash.com/premium_photo-1661877303180-19a028c21048?auto=format&fit=crop&w=800&q=80"
+                    data-desc="Panoramic views of the eternal garden with a private plunge pool. Features an oversized king bed, marble bathroom, and 24/7 butler service.">
+                    <div class="suite-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80')">
+                    </div>
+                    <div class="suite-info">
+                        <h3 class="click-style-target">Orchid Penthouse</h3>
+                        <p>Panoramic views with a private plunge pool.</p>
+                        <span class="discover-link">Explore Realm &rarr;</span>
+                    </div>
+                </div>
+                <!-- Suite 2 -->
+                <div class="suite-card hover-target" data-title="Lotus Pavilion"
+                    data-img-main="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=80"
+                    data-img-sub1="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=800&q=80"
+                    data-img-sub2="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80"
+                    data-desc="Floating above the koi pond, featuring authentic cedar interiors. Experience traditional Japanese aesthetics blended with modern luxury.">
+                    <div class="suite-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=80')">
+                    </div>
+                    <div class="suite-info">
+                        <h3 class="click-style-target">Lotus Pavilion</h3>
+                        <p>Floating above the koi pond, cedar interiors.</p>
+                        <span class="discover-link">Explore Realm &rarr;</span>
+                    </div>
+                </div>
+                <!-- Suite 3 -->
+                <div class="suite-card hover-target" data-title="Jasmine Villa"
+                    data-img-main="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=80"
+                    data-img-sub1="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+                    data-img-sub2="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80"
+                    data-desc="A secluded villa surrounded by blooming jasmine. Enjoy your own private courtyard, an outdoor shower, and a fully stocked wine cellar.">
+                    <div class="suite-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=80')">
+                    </div>
+                    <div class="suite-info">
+                        <h3 class="click-style-target">Jasmine Villa</h3>
+                        <p>A secluded space enclosed by fragrant jasmine.</p>
+                        <span class="discover-link">Explore Realm &rarr;</span>
+                    </div>
+                </div>
+                <!-- Suite 4 -->
+                <div class="suite-card hover-target" data-title="Bamboo Sanctuary"
+                    data-img-main="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80"
+                    data-img-sub1="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80"
+                    data-img-sub2="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80"
+                    data-desc="Nestled deep within the bamboo grove, offering complete privacy. Features floor-to-ceiling windows and an infinity edge soaking tub.">
+                    <div class="suite-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80')">
+                    </div>
+                    <div class="suite-info">
+                        <h3 class="click-style-target">Bamboo Sanctuary</h3>
+                        <p>Nestled deep within the bamboo grove for privacy.</p>
+                        <span class="discover-link">Explore Realm &rarr;</span>
+                    </div>
+                </div>
+                <!-- NEW Suite 5 - Cherry Blossom -->
+                <div class="suite-card hover-target" data-title="Cherry Blossom Suite"
+                    data-img-main="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80"
+                    data-img-sub1="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80"
+                    data-img-sub2="https://tse1.mm.bing.net/th/id/OIP.DNdiYhbDjqA0BCAQzECFwQHaFj?pid=Api&P=0&h=180"
+                    data-desc="Ethereal suite decorated in soft pinks. Features an indoor zen garden, copper tub, and cherry blossom trees just outside the massive terrace.">
+                    <div class="suite-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80')">
+                    </div>
+                    <div class="suite-info">
+                        <h3 class="click-style-target">Cherry Blossom Suite</h3>
+                        <p>Ethereal decor with an indoor zen garden.</p>
+                        <span class="discover-link">Explore Realm &rarr;</span>
+                    </div>
+                </div>
+                <!-- NEW Suite 6 - Moonlight Reserve -->
+                <div class="suite-card hover-target" data-title="Moonlight Reserve"
+                    data-img-main="https://images.unsplash.com/photo-1445991842772-097fea258e7b?auto=format&fit=crop&w=1000&q=80"
+                    data-img-sub1="https://tse3.mm.bing.net/th/id/OIP.j3lixzxba875tzDO5BfPTgHaEf?pid=Api&P=0&h=180"
+                    data-img-sub2="https://plus.unsplash.com/premium_photo-1661877303180-19a028c21048?auto=format&fit=crop&w=800&q=80"
+                    data-desc="Our grandest offering under the stars. Built with an open skylight roof, mahogany woods, and a dedicated private chef.">
+                    <div class="suite-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1445991842772-097fea258e7b?auto=format&fit=crop&w=1000&q=80')">
+                    </div>
+                    <div class="suite-info">
+                        <h3 class="click-style-target">Moonlight Reserve</h3>
+                        <p>Open skylight roof sleeping under the stars.</p>
+                        <span class="discover-link">Explore Realm &rarr;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+        <div class="container reveal">
+            <div class="section-header center">
+                <h2>Gastronomic Alchemy</h2>
+                <p>Curated by Chef de Cuisine, an absolute sensory journey.</p>
+            </div>
+            <div class="menu-showcase">
+                <div class="menu-item hover-target">
+                    <div class="menu-details">
+                        <h3 class="click-style-target">Obsidian Caviar Symphony</h3>
+                        <p>Beluga caviar, smoked creme fraiche, 24k gold leaf on squid ink brioche.</p>
+                    </div>
+                    <div class="menu-price">₹5000</div>
+                </div>
+                <div class="menu-item hover-target">
+                    <div class="menu-details">
+                        <h3 class="click-style-target">Wagyu & Foraged Truffle</h3>
+                        <p>A5 Miyazaki wagyu, wild mushrooms, drizzled in aged balsamic reduction.</p>
+                    </div>
+                    <div class="menu-price">₹4500</div>
+                </div>
+                <div class="menu-item hover-target">
+                    <div class="menu-details">
+                        <h3 class="click-style-target">The Crystal Rose</h3>
+                        <p>Lychee and champagne mousse hidden in a spun-sugar rose.</p>
+                    </div>
+                    <div class="menu-price">₹3000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="section booking-section">
+        <div class="container reveal">
+            <div class="booking-wrapper">
+                <div class="booking-content">
+                    <h2>Secure Your<br>Reservation</h2>
+                    <p>Join us for an unforgettable experience. Availability is highly exclusive.</p>
+                </div>
+                <form class="glass-form hover-target-form">
+                    <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Honored Guest Name</label>
+                    </div>
+                    <div class="date-group">
+                        <div class="input-group">
+                            <input type="date" id="date" required>
+                            <label for="date" class="active">Date of Arrival</label>
+                        </div>
+                        <div class="input-group">
+                            <select id="experience" required>
+                                <option value="" disabled selected></option>
+                                <option value="suite_orchid">Orchid Penthouse</option>
+                                <option value="suite_lotus">Lotus Pavilion</option>
+                                <option value="suite_jasmine">Jasmine Villa</option>
+                                <option value="suite_bamboo">Bamboo Sanctuary</option>
+                                <option value="suite_cherry">Cherry Blossom Suite</option>
+                                <option value="suite_moonlight">Moonlight Reserve</option>
+                                <option value="dining">Dining Experience Only</option>
+                            </select>
+                            <label for="experience" class="active">Experience</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-gold hover-target">Confirm Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-logo click-style-target">LUXURY GARDEN</h2>
+            <div class="footer-links">
+                <a href="#" class="hover-target">Instagram</a>
+                <a href="#" class="hover-target">Concierge</a>
+                <a href="#" class="hover-target">Press</a>
+            </div>
+            <p class="copyright">&copy; 2026 Luxury Garden. The Epitome of Elegance.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
